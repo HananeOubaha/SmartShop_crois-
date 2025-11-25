@@ -48,6 +48,7 @@ public class ProductController {
             return ResponseEntity.ok("Produit supprimé avec succès (Soft Delete)");
         } else {
             throw new EntityNotFoundException("Impossible de supprimer : Produit introuvable");
+
         }
     }
 }

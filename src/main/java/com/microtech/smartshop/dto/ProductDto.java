@@ -21,4 +21,6 @@ public class ProductDto {
 
     @Min(value = 0, message = "Le stock ne peut pas être négatif")
     private int stock;
+
+
 }

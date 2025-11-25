@@ -15,4 +15,6 @@ public interface ProductMapper {
 //    @Mapping(target = "deleted", ignore = true)
     // mettre à jour produit existant
     void updateProductFromDto(ProductDto dto, @MappingTarget Product entity);
+
+
 }
