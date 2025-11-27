@@ -1,5 +1,6 @@
 package com.microtech.smartshop.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.microtech.smartshop.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.*;
@@ -18,6 +19,7 @@ public class User {
     private String username;
 
     @Column(nullable = false)
+    @JsonIgnore
     private String password;
 
     @Enumerated(EnumType.STRING)
