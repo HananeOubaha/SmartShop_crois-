@@ -1,5 +1,6 @@
 package com.microtech.smartshop.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.microtech.smartshop.enums.PaymentStatus;
 import jakarta.persistence.*;
 import lombok.*;
@@ -17,6 +18,7 @@ public class Payment {
 
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
+    @JsonIgnore
     private Order order;
 
     @Column(nullable = false)
